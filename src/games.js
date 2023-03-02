@@ -26,39 +26,26 @@ const calcLogic = () => {
   const randomLeftNumber = Math.round(Math.random() * 100);
   const randomRightNumber = Math.round(Math.random() * 100);
 
+  let operator;
+  let expression;
   if (symbol === 0) {
-    console.log(`Question: ${randomLeftNumber} + ${randomRightNumber}`);
-    const yourAnswer = readlineSync.question('Your answer:');
-    if (+yourAnswer === randomLeftNumber + randomRightNumber) {
-      console.log('Correct!');
-      return true;
-    }
-
-    console.log(`Let's try again, ${userName}!`);
-    return false;
+    operator = '+';
+    expression = randomLeftNumber + randomRightNumber;
+  } else if (symbol === 1) {
+    operator = '-';
+    expression = randomLeftNumber - randomRightNumber;
+  } else if (symbol === 2) {
+    operator = '*';
+    expression = randomLeftNumber * randomRightNumber;
   }
-  if (symbol === 1) {
-    console.log(`Question:${randomLeftNumber} - ${randomRightNumber}`);
-    const yourAnswer = readlineSync.question('Your answer:');
-    if (+yourAnswer === randomLeftNumber - randomRightNumber) {
-      console.log('Correct!');
-      return true;
-    }
 
-    console.log(`Let's try again, ${userName}!`);
-    return false;
+  console.log(`Question: ${randomLeftNumber} ${operator} ${randomRightNumber}`);
+  const yourAnswer = readlineSync.question('Your answer:');
+  if (+yourAnswer === expression) {
+    console.log('Correct!');
+    return true;
   }
-  if (symbol === 2) {
-    console.log(`Question: ${randomLeftNumber} * ${randomRightNumber}`);
-    const yourAnswer = readlineSync.question('Your answer:');
-    if (+yourAnswer === randomLeftNumber * randomRightNumber) {
-      console.log('Correct!');
-      return true;
-    }
-
-    console.log(`Let's try again, ${userName}!`);
-    return false;
-  }
-  return 'smth to return for linter be kind';
+  console.log(`Let's try again, ${userName}!`);
+  return false;
 };
 export { evenLogic, calcLogic };
