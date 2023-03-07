@@ -106,8 +106,8 @@ const progressLogic = () => {
 
   const result = arifmArr[randomNumber];
   arifmArr[randomNumber] = '..';
-
-  console.log(`Question: ${arifmArr}`);
+  const questionArray = arifmArr.join(' ');
+  console.log(`Question: ${questionArray}`);
   const yourAnswer = readlineSync.question('Your answer:');
 
   if (result === +yourAnswer) {
