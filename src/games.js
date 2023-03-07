@@ -4,9 +4,9 @@ import { userName } from './index.js';
 
 const evenLogic = () => {
   const randomNumber = Math.round(Math.random() * 100);
-  console.log('Answer "yes" if the number is even, otherwise answer "no" ');
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  console.log(`Question:${randomNumber}`);
+  console.log(`Question: ${randomNumber}`);
 
   const yourAnswer = readlineSync.question('Your answer:');
 
