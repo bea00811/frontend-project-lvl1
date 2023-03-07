@@ -1,9 +1,11 @@
 import readlineSync from 'readline-sync';
 
-const userName = readlineSync.question('May I have your name? ');
-
 const greeting = () => {
   console.log('Welcome to the Brain Games!');
+};
+
+const userName = readlineSync.question('May I have your name? ');
+const greeting2 = () => {
   console.log(`Hello, ${userName}!`);
 };
 
@@ -20,4 +22,6 @@ const steps = (gameLogic) => {
   }
 };
 
-export { greeting, userName, steps };
+export {
+  greeting, greeting2, steps, userName,
+};

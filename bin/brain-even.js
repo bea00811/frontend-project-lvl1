@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
-import { greeting, steps } from '../src/index.js';
+import { greeting, greeting2, steps } from '../src/index.js';
 import { evenLogic } from '../src/games.js';
 
 greeting();
+greeting2();
 
 steps(evenLogic);
