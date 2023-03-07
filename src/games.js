@@ -55,7 +55,7 @@ const biggestDivisorLogic = () => {
   const randomNumber1 = Math.round(Math.random() * 100);
   const randomNumber2 = Math.round(Math.random() * 100);
 
-  console.log(`Question:${randomNumber1} ${randomNumber2}`);
+  console.log(`Question: ${randomNumber1} ${randomNumber2}`);
   const yourAnswer = readlineSync.question('Your answer:');
 
   if (randomNumber1 < 0 || randomNumber2 < 0) {
