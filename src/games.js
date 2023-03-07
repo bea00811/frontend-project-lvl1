@@ -105,7 +105,7 @@ const progressLogic = () => {
   const randomNumber = getRandomInt(arifmArr.length - 1);
 
   const result = arifmArr[randomNumber];
-  arifmArr[randomNumber] = '...';
+  arifmArr[randomNumber] = '..';
 
   console.log(`Question: ${arifmArr}`);
   const yourAnswer = readlineSync.question('Your answer:');
