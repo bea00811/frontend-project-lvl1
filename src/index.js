@@ -15,7 +15,6 @@ const steps = (gameLogic) => {
   while (userResponse && step < 3) {
     step += 1;
     userResponse = gameLogic();
-
     if (step === 3 && userResponse) {
       console.log(`Congratulations,${userName}!`);
     }
