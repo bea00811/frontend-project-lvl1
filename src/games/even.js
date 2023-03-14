@@ -1,7 +1,8 @@
 import steps from '../index.js';
+import getRandomInt from '../randomNum.js';
 
 const evenLogic = () => {
-  const randomNumber = Math.round(Math.random() * 100);
+  const randomNumber = getRandomInt(100);
   console.log(`Question: ${randomNumber}`);
 
   const rightAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';

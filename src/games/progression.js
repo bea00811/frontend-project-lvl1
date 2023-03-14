@@ -1,10 +1,7 @@
 import steps from '../index.js';
+import getRandomInt from '../randomNum.js';
 
 const progressLogic = () => {
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
-
   const floor = getRandomInt(90);
   const ceil = floor + 10;
   const arifmArr = [];

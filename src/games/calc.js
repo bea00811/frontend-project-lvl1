@@ -1,9 +1,10 @@
+import getRandomInt from '../randomNum.js';
 import steps from '../index.js';
 
 const calcLogic = () => {
-  const symbol = Math.floor(Math.random() * 3);
-  const randomLeftNumber = Math.round(Math.random() * 100);
-  const randomRightNumber = Math.round(Math.random() * 100);
+  const symbol = getRandomInt(3);
+  const randomLeftNumber = getRandomInt(100);
+  const randomRightNumber = getRandomInt(100);
 
   let operator;
   let expression;

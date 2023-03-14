@@ -1,10 +1,11 @@
 import steps from '../index.js';
+import getRandomInt from '../randomNum.js';
 
 /** общий делитель */
 
 const biggestDivisorLogic = () => {
-  const randomNumber1 = Math.round(Math.random() * 100);
-  const randomNumber2 = Math.round(Math.random() * 100);
+  const randomNumber1 = getRandomInt(100);
+  const randomNumber2 = getRandomInt(100);
 
   console.log(`Question: ${randomNumber1} ${randomNumber2}`);
 

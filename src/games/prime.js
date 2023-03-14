@@ -1,10 +1,7 @@
 import steps from '../index.js';
+import getRandomInt from '../randomNum.js';
 
 const isNaturalLogic = () => {
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
-
   const randomNum = getRandomInt(100);
   console.log(`Question: ${randomNum}`);
 
