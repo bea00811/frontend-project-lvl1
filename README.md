@@ -2,9 +2,12 @@
 
 [![Actions Status](https://github.com/bea00811/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/bea00811/frontend-project-lvl1/actions)
 
-<a href="https://codeclimate.com/github/bea00811/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/ad6bd6bc757ea4fc9da3/maintainability" /></a>
-<a href="https://asciinema.org/a/ET0W9R8X3FUSQILkxrAIcUnEV" target="_blank"><img src="https://asciinema.org/a/ET0W9R8X3FUSQILkxrAIcUnEV.svg" /></a>
-<a href="https://asciinema.org/a/VxTQjp6CxhM5AI0uUvVVYvVYB" target="_blank"><img src="https://asciinema.org/a/VxTQjp6CxhM5AI0uUvVVYvVYB.svg" /></a>
-<a href="https://asciinema.org/a/cdxO6jSlpqzhbwuhzFwet3Fg1" target="_blank"><img src="https://asciinema.org/a/cdxO6jSlpqzhbwuhzFwet3Fg1.svg" /></a>
-<a href="https://asciinema.org/a/6pSGlWKuG68XJ6rCQN9YsrwO9" target="_blank"><img src="https://asciinema.org/a/6pSGlWKuG68XJ6rCQN9YsrwO9.svg" /></a>
-<a href="https://asciinema.org/a/ql2QvWdKx3Zif3OZ8Yg5Hh1gz" target="_blank"><img src="https://asciinema.org/a/ql2QvWdKx3Zif3OZ8Yg5Hh1gz.svg" /></a>git
+<a href="https://asciinema.org/a/8VuFlN5bz41hjnDkOYPRJAng1" target="_blank"><img src="https://asciinema.org/a/8VuFlN5bz41hjnDkOYPRJAng1.svg" /></a>
+
+<a href="https://asciinema.org/a/lxqUvnIShd9bsXLaKQX4fH9Wb" target="_blank"><img src="https://asciinema.org/a/lxqUvnIShd9bsXLaKQX4fH9Wb.svg" /></a>
+
+<a href="https://asciinema.org/a/ppv2ECXb6QvKTRZo7gWZhE1fG" target="_blank"><img src="https://asciinema.org/a/ppv2ECXb6QvKTRZo7gWZhE1fG.svg" /></a>
+
+<a href="https://asciinema.org/a/nNC9bsuxvMtfdfjncjxCAtPTh" target="_blank"><img src="https://asciinema.org/a/nNC9bsuxvMtfdfjncjxCAtPTh.svg" /></a>
+
+<a href="https://asciinema.org/a/C7mYM60SzDAS8b8u8wSPOZ7ut" target="_blank"><img src="https://asciinema.org/a/C7mYM60SzDAS8b8u8wSPOZ7ut.svg" /></a>

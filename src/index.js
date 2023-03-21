@@ -1,16 +1,17 @@
 import readlineSync from 'readline-sync';
 
-const steps = (question, calcLogic) => {
+const startSteps = (greetingQuestion, calcLogic) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log(question);
+  console.log(greetingQuestion);
 
   let step = 0;
   const winAnswersCount = 3;
   while (step < winAnswersCount) {
-    const [rightAnswer] = calcLogic();
-    const userAnswer = readlineSync.question('Your answer:');
+    const [question, rightAnswer] = calcLogic();
+    console.log(question);
+    const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === rightAnswer) {
       console.log('Correct!');
       step += 1;
@@ -25,4 +26,4 @@ const steps = (question, calcLogic) => {
 
   console.log(`Congratulations, ${userName}!`);
 };
-export default steps;
+export default startSteps;

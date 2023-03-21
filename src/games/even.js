@@ -1,20 +1,19 @@
-import steps from '../index.js';
+import startSteps from '../index.js';
 import getRandomInt from '../randomNum.js';
 
-const evenLogic = () => {
-  const randomNumber = getRandomInt(100);
-  console.log(`Question: ${randomNumber}`);
 
-  const rightAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';
+const isEven = (number) => number % 2 === 0;
 
-  // userAnswer, rightAnswer
-
-  return [rightAnswer];
+const generateGameEven = () => {
+  const randomNum = getRandomInt(100);
+  const question = `Question: ${randomNum}`
+  const answer = isEven(randomNum) ? 'yes' : 'no';
+  return [question, answer];
 };
 
 const startGame = () => {
   const question = 'Answer "yes" if the number is even, otherwise answer "no".';
-  steps(question, evenLogic);
+  startSteps (question, generateGameEven);
 };
 
 export default startGame;

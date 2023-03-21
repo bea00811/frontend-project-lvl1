@@ -1,32 +1,21 @@
 import getRandomInt from '../randomNum.js';
-import steps from '../index.js';
+import startSteps from '../index.js';
 
-const calcLogic = () => {
-  const symbol = getRandomInt(3);
-  const randomLeftNumber = getRandomInt(100);
-  const randomRightNumber = getRandomInt(100);
+const generateGameCalc = () => {
 
-  let operator;
-  let expression;
-  if (symbol === 0) {
-    operator = '+';
-    expression = randomLeftNumber + randomRightNumber;
-  } else if (symbol === 1) {
-    operator = '-';
-    expression = randomLeftNumber - randomRightNumber;
-  } else if (symbol === 2) {
-    operator = '*';
-    expression = randomLeftNumber * randomRightNumber;
-  }
-
-  console.log(`Question: ${randomLeftNumber} ${operator} ${randomRightNumber}`);
-  const rightAnswer = String(expression);
-  return [rightAnswer];
+  const operations = [['+', (a, b) => a + b], ['-', (a, b) => a - b], ['*', (a, b) => a * b]];
+  const firstNum = getRandomInt(100);
+  const secondNum = getRandomInt(100);
+  const signsIndex = getRandomInt(operations.length,0); 
+  const [sign, operation] = operations[signsIndex];
+  const question = `${firstNum} ${sign} ${secondNum}`;
+  const answer = operation(firstNum, secondNum).toString();
+  return [question, answer];
 };
 
 const startGame = () => {
   const question = 'What is the result of the expression?';
-  steps(question, calcLogic);
+  startSteps (question, generateGameCalc);
 };
 
 export default startGame;
