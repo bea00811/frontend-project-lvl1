@@ -16,7 +16,8 @@ const generateGameProgression = () => {
   const progressionStart = 5;
   const step = 2;
   const length = 10;
-  const progression = (length > minLength) ? makeProgression(progressionStart, step, length)
+  const progression = length > minLength
+    ? makeProgression(progressionStart, step, length)
     : makeProgression(progressionStart, step, minLength);
   const modifyedNumbers = progression.slice();
   const randomIndex = getRandomInt(progression.length, 0);
@@ -28,7 +29,7 @@ const generateGameProgression = () => {
 
 const startGame = () => {
   const question = 'What number is missing in the progression?';
-  startSteps (question, generateGameProgression);
+  startSteps(question, generateGameProgression);
 };
 
 export default startGame;
