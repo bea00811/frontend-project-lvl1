@@ -10,7 +10,7 @@ const startSteps = (greetingQuestion, calcLogic) => {
   const winAnswersCount = 3;
   while (step < winAnswersCount) {
     const [question, rightAnswer] = calcLogic();
-    console.log(question);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === rightAnswer) {
       console.log('Correct!');

@@ -11,7 +11,7 @@ const generateGameCalc = () => {
   const secondNum = getRandomInt(100);
   const signsIndex = getRandomInt(operations.length, 0);
   const [sign, operation] = operations[signsIndex];
-  const question = `Question: ${firstNum} ${sign} ${secondNum}`;
+  const question = `${firstNum} ${sign} ${secondNum}`;
   const answer = operation(firstNum, secondNum).toString();
   return [question, answer];
 };

@@ -13,7 +13,7 @@ const findDivisor = (firstNum, secondNum) => {
 const generateGameGcd = () => {
   const randomNum1 = getRandomInt(100);
   const randomNum2 = getRandomInt(100);
-  const question = `Question: ${randomNum1} ${randomNum2}`;
+  const question = `${randomNum1} ${randomNum2}`;
   const answer = findDivisor(randomNum1, randomNum2).toString();
   return [question, answer];
 };

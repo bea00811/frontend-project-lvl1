@@ -22,7 +22,7 @@ const generateGameProgression = () => {
   const modifyedNumbers = progression.slice();
   const randomIndex = getRandomInt(progression.length, 0);
   modifyedNumbers[randomIndex] = '..';
-  const question = `Question: ${modifyedNumbers.join(' ')}`;
+  const question = `${modifyedNumbers.join(' ')}`;
   const answer = progression[randomIndex].toString();
   return [question, answer];
 };
