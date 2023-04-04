@@ -1,4 +1,4 @@
-### Hexlet tests and linter status:
+
 
 <h2>JavaScript Проект - «Игры разума»</h2>
 <h3>Описание</h3>
@@ -24,7 +24,7 @@
         <li>brain-prime</li>
    </ul>
 </p>
-
+<p> Hexlet tests and linter status: </p>
 [![Actions Status](https://github.com/bea00811/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/bea00811/frontend-project-lvl1/actions)
 
 <a href="https://codeclimate.com/github/bea00811/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/ad6bd6bc757ea4fc9da3/maintainability" /></a>
